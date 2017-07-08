@@ -1,16 +1,30 @@
 {
   "name": "audiosearch-client-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Audiosear.ch client for node",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mike Surowiec",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "events": "^1.0.2",
     "promise": "^7.0.4",
     "request": "^2.61.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/popuparchive/audiosearch-client-node.git"
+  },
+  "keywords": [
+    "audiosearch",
+    "podcasts",
+    "search",
+    "database"
+  ],
+  "bugs": {
+    "url": "https://github.com/popuparchive/audiosearch-client-node/issues"
+  },
+  "homepage": "https://github.com/popuparchive/audiosearch-client-node#readme"
 }

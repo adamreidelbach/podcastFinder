@@ -15,6 +15,11 @@ audiosearch.getTastemakers().then(function (tastemakers) {
 audiosearch.searchEpisodes('text query').then(function (results) {
   // do stuff here.
 });
+
+#Search with parameters
+audiosearch.searchEpisodes('text query', {"size":50,"from":1}).then(function (results) {
+  // do stuff here.
+});
 ```
 
 ### Features

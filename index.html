@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Audiosearch API</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Audiosearch</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-    <h3>Audiosearch API</h3>
-    <p id="numbers"></p>
-    <script type="text/javascript" src="main.js"></script>
+    <h1>Otto API</h1>
+
+    <form id="podcast">
+        <h3>Find A Podcast</h3>
+        <p>Enter Your Search Here</p>
+        <input id="query" placeholder="Enter Query">
+
+        <p>Type</p>
+        <select id="">
+            <option id="trending" value="trending">Trending</option>
+            <option id="recent" value="recent">Recent</option>
+            <option id="relevance" value="relevance">Relevance</option>
+        </select>
+
+        <button id="submit" type="button">Submit</button>
+    </form>
+
+
+
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

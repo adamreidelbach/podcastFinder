@@ -1,3 +1,18 @@
+#podcastSearch {
+  background-color: lightgrey;
+  width: 25%;
+  margin: 5px; }
 
+#output {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-row-gap: 30px; }
+
+.podcastItems {
+  width: 300px; }
+
+.images {
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

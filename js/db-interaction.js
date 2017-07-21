@@ -1,13 +1,14 @@
 "use strict";
 
-let db = require("./db-interaction");
+let dom = require("./dom-builder");
 
-function getPodcast() {
+function getPodcast(query, type, count) {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', `https://api.ottoradio.com/v1/podcasts?query=${query}&type=${type}&count=${count}`);
   xhr.onload = function() {
       if (xhr.status === 200) {
-          console.log(xhr.responseText);
+          var podcasts = JSON.parse(this.responseText);
+          dom.showPodcasts(podcasts);
       }
       else {
           console.log('Request failed.  Returned status of ' + xhr.status);
@@ -15,3 +16,5 @@ function getPodcast() {
   };
   xhr.send();
 }
+
+module.exports = {getPodcast};

@@ -7,23 +7,26 @@
 <body>
     <h1>Otto API</h1>
 
-    <form id="podcast">
+    <div id="podcastSearch">
         <h3>Find A Podcast</h3>
         <p>Enter Your Search Here</p>
-        <input id="query" placeholder="Enter Query">
+        <input id="podcastQuery" placeholder="Enter Query">
 
         <p>Type</p>
-        <select id="">
+        <select id="podcastType">
             <option id="trending" value="trending">Trending</option>
             <option id="recent" value="recent">Recent</option>
             <option id="relevance" value="relevance">Relevance</option>
         </select>
 
-        <button id="submit" type="button">Submit</button>
-    </form>
+        <p>Count (Min 5, Max 50)</p>
+        <input id="podcastCount" type="number" value="10">
 
+        <p><button id="podcastSubmit" type="button">Submit</button></p>
+    </div>
 
+    <div id="output"></div>
 
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="dist/app.js"></script>
 </body>
 </html>

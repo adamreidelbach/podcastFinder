@@ -61,8 +61,7 @@ let podcastSubmit = document.getElementById("podcastSubmit"),
 podcastSubmit.addEventListener("click", function() {
     db.query = podcastQuery.value;
     db.type = podcastType.value;
-    db.count = podcastType.value;
+    db.count = podcastCount.value;
     db.getPodcast(db.query, db.type, db.count);
 });
-
 },{"./db-interaction":1}]},{},[1,2,3]);

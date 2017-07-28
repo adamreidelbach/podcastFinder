@@ -6,7 +6,6 @@ let text = "";
 function showPodcasts(podcasts) {
     for (var item in podcasts){
         var podcastObj = podcasts[item];
-        console.log(podcastObj);
         text += `<div class="podcastItems">
                     <h3 class="title">${podcastObj.title}</h3>
                     <img class="images" src="${podcastObj.image_url}">

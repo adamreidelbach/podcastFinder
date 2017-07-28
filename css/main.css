@@ -1,5 +1,4 @@
 #podcastSearch {
-  background-color: lightgrey;
   width: 25%;
   margin: 5px; }
 
@@ -10,9 +9,14 @@
   grid-row-gap: 30px; }
 
 .podcastItems {
-  width: 300px; }
+  width: 300px;
+  height: 700px; }
 
 .images {
   width: 100%; }
+
+.description {
+  height: 250px;
+  overflow: auto; }
 
 /*# sourceMappingURL=main.css.map */

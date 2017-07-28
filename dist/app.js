@@ -28,7 +28,6 @@ let text = "";
 function showPodcasts(podcasts) {
     for (var item in podcasts){
         var podcastObj = podcasts[item];
-        console.log(podcastObj);
         text += `<div class="podcastItems">
                     <h3 class="title">${podcastObj.title}</h3>
                     <img class="images" src="${podcastObj.image_url}">
@@ -56,12 +55,23 @@ let db = require("./db-interaction");
 let podcastSubmit = document.getElementById("podcastSubmit"),
     podcastQuery = document.getElementById("podcastQuery"),
     podcastType = document.getElementById("podcastType"),
-    podcastCount = document.getElementById("podcastCount");
+    podcastCount = document.getElementById("podcastCount"),
+    output = document.getElementById("output");
 
-podcastSubmit.addEventListener("click", function() {
-    db.query = podcastQuery.value;
-    db.type = podcastType.value;
-    db.count = podcastCount.value;
-    db.getPodcast(db.query, db.type, db.count);
+podcastSubmit.addEventListener("click", function(event) {
+    output.innerHTML = "";
+    let value = podcastQuery.value;
+    let type = podcastType.value;
+    let count = podcastCount.value;
+    console.log(value, type, count);
+    // db.getPodcast(db.query, db.type, db.count);
 });
+
+function populateDefault() {
+    let query = "";
+    let type = "trending";
+    let count = 9;
+    db.getPodcast(query, type, count);
+}
+populateDefault();
 },{"./db-interaction":1}]},{},[1,2,3]);

@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Audiosearch</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 
-    <div id="podcastSearch">
-        <h4>Find A Podcast</h4>
-        
-        <div class="input-field">
-            <input placeholder="Enter Your Search" id="podcastQuery" type="text" class="validate">
-        </div> 
+    <form class="searchArea">
+        <div class="form-group" id="podcastSearch">
+            <h3 class="header">Find A Podcast</h3>
 
-        <form action="#">
-            <p>Choose A Filter</p>
-            <p>
-            <input name="group1" type="radio" id="trending" value="trending"/>
-            <label for="trending">Trending</label>
-            </p>
-            <p>
-            <input name="group1" type="radio" id="recent" value="recent" />
-            <label for="recent">Recent</label>
-            </p>
-            <p>
-            <input name="group1" type="radio" id="relevance" value="relevance" />
-            <label for="relevance">Relevance</label>
-            </p>
-        </form>
+            <div class="form-group">
+                <label for="podcastQuery">Enter Your Search</label>
+                <input type="text" class="form-control" id="podcastQuery" placeholder="Search For Podcasts">
+            </div>
 
-        <p>Select Number of Podcasts</p>
-        <div class="input-field">
-            <form action="#">
-                <p class="range-field">
-                <input type="range" id="podcastCount" min="1" max="25" />
-                </p>
-            </form>
+            <div class="form-group">
+                <label for="podcastType">Filter Your Search</label>
+                <select class="form-control" id="podcastType">
+                    <option id="trending" value="trending">Trending</option>
+                    <option id="recent" value="recent">Recent</option>
+                    <option id="relevance" value="relevance">Relevance</option>
+                </select> 
+            </div>
+
+            <input id="podcastSubmit" class="btn btn-default" type="submit" value="Submit">
         </div>
-
-        <button id="podcastSubmit" class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
-    </div>
+    </form>
 
     <div id="output"></div>
+    <button id='moreButton' class="btn btn-primary center-block">More</button>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="dist/app.js"></script>
 </body>
 </html>

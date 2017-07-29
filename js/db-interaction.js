@@ -1,6 +1,7 @@
 "use strict";
 
-let dom = require("./dom-builder");
+let dom = require("./dom-builder"),
+    output = document.getElementById("output");
 
 function getPodcast(query, type, count) {
   var xhr = new XMLHttpRequest();

@@ -1,6 +1,12 @@
+.header {
+  text-align: center; }
+
+.searchArea {
+  display: grid;
+  grid-template-columns: 30% 40% 30%; }
+
 #podcastSearch {
-  width: 25%;
-  margin: 5px; }
+  grid-column-start: 2; }
 
 #output {
   display: grid;
@@ -9,14 +15,17 @@
   grid-row-gap: 30px; }
 
 .podcastItems {
-  width: 300px;
-  height: 700px; }
+  width: 300px; }
+
+#moreButton {
+  text-align: center;
+  position: relative; }
 
 .images {
   width: 100%; }
 
 .description {
-  height: 250px;
+  height: 175px;
   overflow: auto; }
 
 /*# sourceMappingURL=main.css.map */

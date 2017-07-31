@@ -23,15 +23,41 @@ module.exports = {getPodcast};
 },{"./dom-builder":2}],2:[function(require,module,exports){
 "use strict";
 
-let output = document.getElementById("output");
-let text = "";
+let output = document.getElementById("output"),
+    podcastItems = document.getElementsByClassName("podcastItems"),
+    moreButton = document.getElementById("moreButton");
 
 function showPodcasts(podcasts) {
+    let text = "";
     for (var item in podcasts){
+        if (podcasts.length > 6) {
+            var morePodcasts = podcasts.splice(6, 11);
+        }
         var podcastObj = podcasts[item];
         text += `<div class="podcastItems">
                     <h3 class="title">${podcastObj.source}</h3>
-                    <p class="title">${podcastObj.title}</p>
+                    <p class="episode">${podcastObj.title}</p>
+                    <img class="images" src="${podcastObj.image_url}">
+                    <p class="audio"><audio controls><source src="${podcastObj.audio_url}" type="audio/mp3"></audio></p>
+                    <p class="description">${podcastObj.description}</p>
+                </div>`;
+    }
+    output.innerHTML = text;
+    moreButton.addEventListener("click", function() {
+        showMorePodcasts(podcasts, morePodcasts);
+        moreButton.disabled = true;
+    });
+}
+
+function showMorePodcasts(podcasts, morePodcasts) {
+    var combinedPodcasts = podcasts.concat(morePodcasts);
+    console.log(combinedPodcasts);
+    let text = "";
+    for (var item in combinedPodcasts){
+        var podcastObj = combinedPodcasts[item];
+        text += `<div class="podcastItems">
+                    <h3 class="title">${podcastObj.source}</h3>
+                    <p class="episode">${podcastObj.title}</p>
                     <img class="images" src="${podcastObj.image_url}">
                     <p class="audio"><audio controls><source src="${podcastObj.audio_url}" type="audio/mp3"></audio></p>
                     <p class="description">${podcastObj.description}</p>
@@ -40,7 +66,7 @@ function showPodcasts(podcasts) {
     output.innerHTML = text;
 }
 
-module.exports = {showPodcasts};
+module.exports = {showPodcasts, showMorePodcasts};
 },{}],3:[function(require,module,exports){
 "use strict";
 
@@ -56,18 +82,20 @@ let podcastSubmit = document.getElementById("podcastSubmit"),
 podcastSubmit.addEventListener("click", function(event) {
     let query = podcastQuery.value;
     let type = podcastType.value;
-    let count = 6;
+    let count = 12;
+    console.log(query, type, count);
     db.getPodcast(query, type, count);
 });
 
-moreButton.addEventListener("click", function(event) {
-    
+$("#podcastSubmit").click(function( event ) {
+  event.preventDefault();
+  moreButton.disabled = false;
 });
 
 function populateDefault() {
     let query = "";
     let type = "trending";
-    let count = 6;
+    let count = 12;
     db.getPodcast(query, type, count);
 }
 populateDefault();

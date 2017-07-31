@@ -7,8 +7,8 @@ let output = document.getElementById("output"),
 function showPodcasts(podcasts) {
     let text = "";
     for (var item in podcasts){
-        if (podcasts.length > 3) {
-            var morePodcasts = podcasts.splice(3, 5);
+        if (podcasts.length > 6) {
+            var morePodcasts = podcasts.splice(6, 11);
         }
         var podcastObj = podcasts[item];
         text += `<div class="podcastItems">

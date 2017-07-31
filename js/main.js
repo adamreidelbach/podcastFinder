@@ -12,7 +12,7 @@ let podcastSubmit = document.getElementById("podcastSubmit"),
 podcastSubmit.addEventListener("click", function(event) {
     let query = podcastQuery.value;
     let type = podcastType.value;
-    let count = 6;
+    let count = 12;
     console.log(query, type, count);
     db.getPodcast(query, type, count);
 });
@@ -25,7 +25,7 @@ $("#podcastSubmit").click(function( event ) {
 function populateDefault() {
     let query = "";
     let type = "trending";
-    let count = 6;
+    let count = 12;
     db.getPodcast(query, type, count);
 }
 populateDefault();

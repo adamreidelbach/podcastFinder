@@ -30,8 +30,8 @@ let output = document.getElementById("output"),
 function showPodcasts(podcasts) {
     let text = "";
     for (var item in podcasts){
-        if (podcasts.length > 3) {
-            var morePodcasts = podcasts.splice(3, 5);
+        if (podcasts.length > 6) {
+            var morePodcasts = podcasts.splice(6, 11);
         }
         var podcastObj = podcasts[item];
         text += `<div class="podcastItems">
@@ -82,7 +82,7 @@ let podcastSubmit = document.getElementById("podcastSubmit"),
 podcastSubmit.addEventListener("click", function(event) {
     let query = podcastQuery.value;
     let type = podcastType.value;
-    let count = 6;
+    let count = 12;
     console.log(query, type, count);
     db.getPodcast(query, type, count);
 });
@@ -95,7 +95,7 @@ $("#podcastSubmit").click(function( event ) {
 function populateDefault() {
     let query = "";
     let type = "trending";
-    let count = 6;
+    let count = 12;
     db.getPodcast(query, type, count);
 }
 populateDefault();

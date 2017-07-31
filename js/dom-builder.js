@@ -6,6 +6,9 @@ let output = document.getElementById("output"),
 
 function showPodcasts(podcasts) {
     let text = "";
+    if (podcasts.length <= 6) {
+        moreButton.disabled = true;
+    } 
     for (var item in podcasts){
         if (podcasts.length > 6) {
             var morePodcasts = podcasts.splice(6, 11);

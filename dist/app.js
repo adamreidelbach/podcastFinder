@@ -37,7 +37,6 @@ function showPodcasts(podcasts) {
                     <p class="description">${podcastObj.description}</p>
                 </div>`;
     }
-    console.log(text);
     output.innerHTML = text;
 }
 

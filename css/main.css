@@ -30,10 +30,15 @@ p {
 
 .description {
   height: 175px;
-  overflow: auto; }
+  width: 300px;
+  overflow: auto;
+  margin: 0 auto; }
 
 #podcastSubmit {
   margin-bottom: 15px; }
+
+.podcastItems {
+  width: 325px; }
 
 @media (max-width: 767px) {
   .searchArea {
@@ -72,11 +77,12 @@ p {
     grid-row-gap: 30px; }
 
   .podcastItems {
-    width: 300px;
     text-align: justify; }
 
   audio {
-    margin-top: 15px; }
+    text-align: center;
+    margin-top: 15px;
+    width: 100%; }
 
   .images {
     width: 100%;
@@ -96,11 +102,12 @@ p {
     grid-row-gap: 30px; }
 
   .podcastItems {
-    width: 300px;
     text-align: justify; }
 
   audio {
-    margin-top: 15px; }
+    text-align: center;
+    margin-top: 15px;
+    width: 100%; }
 
   .images {
     width: 100%;

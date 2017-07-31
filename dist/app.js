@@ -29,6 +29,9 @@ let output = document.getElementById("output"),
 
 function showPodcasts(podcasts) {
     let text = "";
+    if (podcasts.length <= 6) {
+        moreButton.disabled = true;
+    } 
     for (var item in podcasts){
         if (podcasts.length > 6) {
             var morePodcasts = podcasts.splice(6, 11);
@@ -77,7 +80,8 @@ let podcastSubmit = document.getElementById("podcastSubmit"),
     podcastType = document.getElementById("podcastType"),
     podcastCount = document.getElementById("podcastCount"),
     output = document.getElementById("output"),
-    moreButton = document.getElementById("moreButton");
+    moreButton = document.getElementById("moreButton"),
+    intro = document.getElementById("intro");
 
 podcastSubmit.addEventListener("click", function(event) {
     let query = podcastQuery.value;
@@ -90,6 +94,7 @@ podcastSubmit.addEventListener("click", function(event) {
 $("#podcastSubmit").click(function( event ) {
   event.preventDefault();
   moreButton.disabled = false;
+  intro.className = "hidden";
 });
 
 function populateDefault() {

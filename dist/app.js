@@ -80,8 +80,7 @@ let podcastSubmit = document.getElementById("podcastSubmit"),
     podcastType = document.getElementById("podcastType"),
     podcastCount = document.getElementById("podcastCount"),
     output = document.getElementById("output"),
-    moreButton = document.getElementById("moreButton"),
-    intro = document.getElementById("intro");
+    moreButton = document.getElementById("moreButton");
 
 podcastSubmit.addEventListener("click", function(event) {
     let query = podcastQuery.value;
@@ -94,7 +93,6 @@ podcastSubmit.addEventListener("click", function(event) {
 $("#podcastSubmit").click(function( event ) {
   event.preventDefault();
   moreButton.disabled = false;
-  intro.className = "hidden";
 });
 
 function populateDefault() {

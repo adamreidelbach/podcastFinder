@@ -19,6 +19,7 @@ podcastSubmit.addEventListener("click", function(event) {
 
 $("#podcastSubmit").click(function( event ) {
   event.preventDefault();
+  moreButton.disabled = false;
 });
 
 function populateDefault() {

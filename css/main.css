@@ -9,7 +9,7 @@ h2 {
 
 h3 {
   font-size: 2em;
-  display: inline; }
+  text-align: left; }
 
 .episode {
   font-size: 1.2em;
@@ -24,10 +24,6 @@ p {
   margin-top: 20px;
   margin-bottom: 20px; }
 
-.images {
-  width: 90%;
-  margin-left: 5%; }
-
 .description {
   height: 175px;
   width: 300px;
@@ -38,7 +34,15 @@ p {
   margin-bottom: 15px; }
 
 .podcastItems {
-  width: 325px; }
+  width: 300px; }
+
+.images {
+  width: 100%;
+  margin: auto; }
+
+.credit {
+  margin-left: 76%;
+  margin-bottom: 15px; }
 
 @media (max-width: 767px) {
   .searchArea {
@@ -63,7 +67,11 @@ p {
   audio {
     text-align: center;
     margin-top: 15px;
-    width: 100%; } }
+    width: 100%; }
+
+  .images {
+    width: 100%;
+    margin: auto; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .searchArea {
     width: 50%; }
@@ -74,7 +82,8 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    grid-row-gap: 30px; }
+    grid-row-gap: 30px;
+    margin-top: 10px; }
 
   .podcastItems {
     text-align: justify; }
@@ -82,11 +91,7 @@ p {
   audio {
     text-align: center;
     margin-top: 15px;
-    width: 100%; }
-
-  .images {
-    width: 100%;
-    margin: auto; } }
+    width: 100%; } }
 @media (min-width: 992px) {
   .searchArea {
     display: grid;
@@ -99,7 +104,8 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    grid-row-gap: 30px; }
+    grid-row-gap: 30px;
+    margin-top: 20px; }
 
   .podcastItems {
     text-align: justify; }
@@ -107,10 +113,6 @@ p {
   audio {
     text-align: center;
     margin-top: 15px;
-    width: 100%; }
-
-  .images {
-    width: 100%;
-    margin: auto; } }
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

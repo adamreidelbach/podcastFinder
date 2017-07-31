@@ -21,10 +21,6 @@ $("#podcastSubmit").click(function( event ) {
   event.preventDefault();
 });
 
-// moreButton.addEventListener("click", function(event) {
-    
-// });
-
 function populateDefault() {
     let query = "";
     let type = "trending";

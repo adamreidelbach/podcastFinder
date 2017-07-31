@@ -1,31 +1,109 @@
+body {
+  font-family: 'Ubuntu', sans-serif; }
+
 .header {
   text-align: center; }
 
-.searchArea {
-  display: grid;
-  grid-template-columns: 30% 40% 30%; }
+h2 {
+  font-size: 2.6em; }
 
-#podcastSearch {
-  grid-column-start: 2; }
+h3 {
+  font-size: 2em;
+  display: inline; }
 
-#output {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  grid-row-gap: 30px; }
+.episode {
+  font-size: 1.2em;
+  font-style: italic; }
 
-.podcastItems {
-  width: 300px; }
+p {
+  font-size: 1.1em; }
 
 #moreButton {
   text-align: center;
-  position: relative; }
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .images {
-  width: 100%; }
+  width: 90%;
+  margin-left: 5%; }
 
 .description {
   height: 175px;
   overflow: auto; }
+
+#podcastSubmit {
+  margin-bottom: 15px; }
+
+@media (max-width: 767px) {
+  .searchArea {
+    width: 75%; }
+
+  #output {
+    width: 70%;
+    margin: auto; }
+
+  #output {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-row-gap: 20px; }
+
+  .podcastItems {
+    text-align: justify; }
+
+  .title {
+    margin-top: 0; }
+
+  audio {
+    text-align: center;
+    margin-top: 15px;
+    width: 100%; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .searchArea {
+    width: 50%; }
+
+  #output {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 30px; }
+
+  .podcastItems {
+    width: 300px;
+    text-align: justify; }
+
+  audio {
+    margin-top: 15px; }
+
+  .images {
+    width: 100%;
+    margin: auto; } }
+@media (min-width: 992px) {
+  .searchArea {
+    display: grid;
+    grid-template-columns: 25% 50% 25%; }
+
+  #podcastSearch {
+    grid-column-start: 2; }
+
+  #output {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 30px; }
+
+  .podcastItems {
+    width: 300px;
+    text-align: justify; }
+
+  audio {
+    margin-top: 15px; }
+
+  .images {
+    width: 100%;
+    margin: auto; } }
 
 /*# sourceMappingURL=main.css.map */

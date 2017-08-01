@@ -55,11 +55,10 @@ p {
     width: 75%; }
 
   #output {
-    width: 70%;
+    width: 75%;
     margin: auto; }
 
   #output {
-    display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     grid-row-gap: 20px; }

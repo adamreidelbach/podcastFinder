@@ -46,8 +46,9 @@ p {
   margin: auto; }
 
 .credit {
-  margin-left: 76%;
-  margin-bottom: 15px; }
+  position: relative;
+  text-align: right;
+  margin: 0 8px 8px 0; }
 
 @media (max-width: 767px) {
   .searchArea {

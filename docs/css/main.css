@@ -31,9 +31,8 @@ p {
 
 .description {
   height: 175px;
-  width: 300px;
   overflow: auto;
-  margin: 0 auto; }
+  margin-bottom: 20px; }
 
 #podcastSubmit {
   margin-bottom: 15px; }
@@ -55,7 +54,6 @@ p {
     width: 75%; }
 
   #output {
-    width: 75%;
     margin: auto; }
 
   #output {
@@ -64,7 +62,8 @@ p {
     grid-row-gap: 20px; }
 
   .podcastItems {
-    text-align: justify; }
+    text-align: justify;
+    width: 325px; }
 
   .title {
     margin-top: 0; }

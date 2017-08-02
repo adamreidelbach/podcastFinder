@@ -18,7 +18,15 @@ h3 {
 
 .episode {
   font-size: 1.2em;
-  font-style: italic; }
+  font-style: italic;
+  display: -webkit-box;
+  max-width: 100%;
+  margin: 14px 0 14px 0;
+  line-height: 1;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 p {
   font-size: 1.1em; }
@@ -32,7 +40,7 @@ p {
 .description {
   height: 175px;
   overflow: auto;
-  margin-bottom: 20px; }
+  margin-bottom: 25px; }
 
 #podcastSubmit {
   margin-bottom: 15px; }
@@ -49,6 +57,16 @@ p {
   text-align: right;
   margin: 0 8px 8px 0; }
 
+.title {
+  display: -webkit-box;
+  max-width: 100%;
+  margin: 14px 0 14px 0;
+  line-height: 1;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
 @media (max-width: 767px) {
   .searchArea {
     width: 75%; }
@@ -62,8 +80,7 @@ p {
     grid-row-gap: 20px; }
 
   .podcastItems {
-    text-align: justify;
-    width: 325px; }
+    text-align: justify; }
 
   .title {
     margin-top: 0; }

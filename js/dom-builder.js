@@ -14,7 +14,7 @@ function showPodcasts(podcasts) {
             var morePodcasts = podcasts.splice(6, 11);
         }
         var podcastObj = podcasts[item];
-        text += `<div class="podcastItems">
+        text += `<div class="podcastItems container">
                     <h3 class="title">${podcastObj.source}</h3>
                     <p class="episode">${podcastObj.title}</p>
                     <img class="images" src="${podcastObj.image_url}">

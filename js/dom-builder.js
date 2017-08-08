@@ -35,7 +35,7 @@ function showMorePodcasts(podcasts, morePodcasts) {
     let text = "";
     for (var item in combinedPodcasts){
         var podcastObj = combinedPodcasts[item];
-        text += `<div class="podcastItems">
+        text += `<div class="podcastItems container">
                     <h3 class="title">${podcastObj.source}</h3>
                     <p class="episode">${podcastObj.title}</p>
                     <img class="images" src="${podcastObj.image_url}">

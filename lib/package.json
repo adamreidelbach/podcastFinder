@@ -1,47 +1,22 @@
 {
-  "name": "audiosearch-client-node",
-  "version": "1.0.1",
-  "description": "Audiosear.ch client for node",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Mike Surowiec",
-  "license": "MIT",
+  "name": "podcast-finder",
+  "version": "1.0.0",
+  "author": "Adam Reidelbach",
   "devDependencies": {
     "browserify": "^13.1.1",
     "grunt": "^1.0.1",
     "grunt-browserify": "^5.0.0",
-    "grunt-contrib-handlebars": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-nodeunit": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "handlebars": "^4.0.6",
-    "hbsfy": "^2.7.0",
-    "jquery": "^3.1.1",
     "jshint": "^2.9.4",
     "jshint-stylish": "^2.2.1",
     "matchdep": "^1.0.1"
   },
   "dependencies": {
-    "events": "^1.0.2",
-    "promise": "^7.0.4",
-    "request": "^2.61.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/popuparchive/audiosearch-client-node.git"
-  },
-  "keywords": [
-    "audiosearch",
-    "podcasts",
-    "search",
-    "database"
-  ],
-  "bugs": {
-    "url": "https://github.com/popuparchive/audiosearch-client-node/issues"
-  },
-  "homepage": "https://github.com/popuparchive/audiosearch-client-node#readme"
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
 }

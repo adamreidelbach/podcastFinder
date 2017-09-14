@@ -23,10 +23,15 @@ If you'd like to pull down a copy of Podcast Finder, here's a few steps to follo
 ## Built With
 
 [Browserify](http://browserify.org/) - Browserify lets you require('modules') in the browser by bundling up all of your dependencies.
-[Grunt](https://gruntjs.com/) - Javascript task runner.  
+
+[Grunt](https://gruntjs.com/) - Javascript task runner.
+
 [JS Hint](http://jshint.com/) - A tool that helps to detect errors and potential problems in your JavaScript code.  
-[JQuery](https://jquery.com/) - The Write Less, Do More, JavaScript Library. 
+
+[JQuery](https://jquery.com/) - The Write Less, Do More, JavaScript Library.
+
 [Bootstrap](http://getbootstrap.com/) - The most popular HTML, CSS, and JS library in the world.
+
 [Sass](http://sass-lang.com/) - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
 
 ## Issues
